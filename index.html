@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Receitas Veganas</title>
+<style>
+    body{
+        background:#998265;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+
+
+
+    }
+    @media (orientation: landscape) {
+    body {zoom: 0.7;}
+}
+    .titulo{
+        font-size:40px;
+        margin:0 auto;
+width:90%;
+        max-width:400px;
+        text-align:center;
+
+        font-weight:bold;
+        background: url(https://dl.dropbox.com/scl/fi/12wt8vh57kzdprm0emgcj/Veganotas.png?rlkey=i0pizrmjzgjx5w5gtsl9iydeu&st=yxp86vda&dl=0) no-repeat;
+    background-size: 100%;
+    margin-top:50px;
+    aspect-ratio: 3 / 1;
+    }
+    .receitasveganas{
+        font-size:150%;
+        margin:0 auto;
+        display:block;
+        left:0;
+        right:0;
+        text-align:center;
+        font-weight:bold;
+        color:#060;
+        margin-top:0px;
+        margin-bottom:40px;
+    }
+    .embaixopesquisa{
+        margin:0 auto;
+        left:0px;
+        right:0px;
+        text-align:center;
+    }
+        .pesquisa{
+        font-size:20px;
+        margin:0 auto;
+        left:0px;
+        right:0px;
+        text-align:center;
+        padding:5px;
+        font-weight:bold;
+        border-radius:50px;
+        margin-bottom:30px;
+        border:0px solid #000;
+        box-shadow:0px 0px 1px 1px;
+
+    }
+    input:focus {outline: none;
+    color: #000;
+}
+::placeholder {
+    color: #777;
+}
+    .conteudo{
+        background:#463;
+
+        padding:20px;
+        margin:0 auto;
+        left:0px;
+        right:0px;
+        max-width:1200px;
+        border-radius:10px;
+        background-color: #3B342C;
+        background:transparent;
+
+    }
+    .conteudo-receita{
+ 
+        padding:30px;
+
+    }
+        .dica{
+
+    }
+    h1{
+        box-shadow:0px 0px 1px 1px;
+        padding:20px;
+        background:#efc;
+        border-radius:10px;
+    }
+    a:link {
+ text-decoration: none;
+  color:#00f;
+
+  padding:3px;
+  margin:10px;
+  width:100%;
+  margin:0 auto;
+    font-weight:bold;
+
+}
+a:visited {
+ color:#00f;
+  padding:3px;
+  margin:10px;
+  width:100%;
+  margin:0 auto;
+font-weight:bold;
+}
+    .foto{
+
+    width:100%;
+    max-width:700px;
+    pointer-events: none;
+    box-shadow:0px 0px 1px 1px;
+}
+    .mini{
+    display: block;
+    width:fit-content;
+    height:100px;
+    margin:10px;
+    pointer-events: none;
+    box-shadow: 0px 0px 1px 1px #000;
+}
+.atalho{
+    font-size:20px;
+}
+    
+</style>
+</head>
+<body>
+    <div class="titulo"></div>
+    <div class="receitasveganas">Receitas Veganas</div>
+    <div class="embaixopesquisa"><input class="pesquisa" type="text" id="searchbar" onkeyup="pesquisar()" placeholder="Pesquisar" onfocus="" onfocusout="" onclick=""></div>
+         <script>
+            function pesquisar() {
+                let input = document.getElementById('searchbar').value
+                input = input.toLowerCase();
+                let x = document.getElementsByClassName('filtro');
+                for (i = 0; i < x.length; i++) {
+                    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                        x[i].style.display = "none";
+                    } else {
+                        x[i].style.display = "block";
+                    }
+                }
+            }
+        </script>
+<div class="conteudo">
+    <a class="atalho filtro" href="#um" translate="no">Bolo de cenoura com calda de chocolate<img class="mini" src="https://dl.dropbox.com/scl/fi/bpqepeerwp4re6uvvz0yv/bolo-de-cenoura-vegano.jpeg?rlkey=p1yathznz90zokq783uckbo93&st=7oznte45&dl=0"></a>
+    <a class="atalho filtro" href="#dois" translate="no">Pão caseiro<img class="mini" src="https://dl.dropbox.com/scl/fi/9x361hnd800krellcbc4u/IMG_20240127_212011_074.jpg?rlkey=72sj2kq5n6eykrxn7suf18o78&st=kiv7hf5e&dl=0"></a>
+    <a class="atalho filtro" href="#tres" translate="no">Geladinho<img class="mini" src="https://dl.dropbox.com/scl/fi/m0p1fya6eutosizxmtq7a/Geladinho-de-Maracuja.jpg?rlkey=oywx1hc68x4v5taen9fcbsaf0&st=yojvh12v&dl=0"></a>
+    
+    <div class="conteudo-receita filtro" id="um">
+        <h1>Bolo de cenoura com calda de chocolate</h1>
+        <img class="foto" src="https://dl.dropbox.com/scl/fi/bpqepeerwp4re6uvvz0yv/bolo-de-cenoura-vegano.jpeg?rlkey=p1yathznz90zokq783uckbo93&st=7oznte45&dl=0">
+        <h2>Ingredientes do bolo:</h2>
+        <li>1 + 1/3 de xíc. de cenoura picada</li>
+        <li>3/4 de xíc. de açucar</li>
+        <li>1/2 xíc. de água</li>
+        <li>1/4 de xíc. de óleo vegetal</li>
+        <li>1 + 3/4 de xíc. de farinha de trigo</li>
+        <li>1 c.s. de fermento químico em pó</li>
+        <li>1 pitadinha de sal</li>
+        <h2>Modo de preparo do bolo:</h2>
+        <li>Unte e enfarinhe uma forma de 30x20 e pré -aqueça o forno a 180ºC;</li>
+        <li>Bata a cenoura com o açucar, a água e o óleo no liquidificador e depois transfira para uma tígela;</li>
+        <li>Adicione a farinha e o fermento e mexa somente até a massa se formar;</li>
+        <li>Passe a massa para a forma preparada e asse por 25 a 30 min.</li>
+        <h2>Ingredientes da calda:</h2>
+        <li>3/4 de xíc. de pasta de amendoim com cacau</li>
+        <li>240ml a 300ml de leite vegetal ou água</li>
+        <li>1 a 2 c.s. de cacau</li>
+        <h2>Modo de preparo da calda:</h2>
+        <li>Misture a pasta com o leite, o cacau e o açucar em uma panela até ficar homogêneo. Coloque mais leite e/ou cacau, se quiser;</li>
+        <li>Cozinhe em fogo baixo até ficar cremoso e despeje em cima do bolo;</li>
+        <li>Finalize com os nibs ou com granulado sem leite.</li>
+    </div>
+    <div class="conteudo-receita filtro" id="dois">
+        <h1>Pão caseiro</h1>
+        <img class="foto" src="https://dl.dropbox.com/scl/fi/9x361hnd800krellcbc4u/IMG_20240127_212011_074.jpg?rlkey=72sj2kq5n6eykrxn7suf18o78&st=kiv7hf5e&dl=0">
+        <h2>Ingredientes:</h2>
+        <li>3 xícaras de farinha de trigo</li>
+        <li>1 xícara de água</li>
+        <li>3 colheres de sopa de óleo</li>
+        <li>1 + 1/2 colher de sopa de açucar</li>
+        <li>1 colher de chá de sal</li>
+        <li>1 sachê (10g) de fermento biológico</li>
+        <h2>Modo de preparo:</h2>
+        <li>Unte e enfarinhe uma forma para pão de 25x13;</li>
+        <li>Adicione todos os ingredientes numa vasilha e misture bem com uma colher;</li>
+        <li>Depois que a massa começar a ficar consistente, começe a sovar a massa com as mãos até ficar com uma consistência homogênea. Caso a massa fique muito seca, adicione água, e caso a massa fique muito grudenta adicione mais farinha;</li>
+        <li>Quando a massa estiver pronta, coloque na forma e faça alguns cortes rasos na parte de cima para a massa ter um crescimento melhor;</li>
+        <li>Leve a massa ao forno por volta de 40 min á 230ºC ou até ficar dourado. Depois só retirar e está pronto!</li>
+    </div>
+     <div class="conteudo-receita filtro" id="tres">
+        <h1>Geladinho</h1>
+        <img class="foto" src="https://dl.dropbox.com/scl/fi/m0p1fya6eutosizxmtq7a/Geladinho-de-Maracuja.jpg?rlkey=oywx1hc68x4v5taen9fcbsaf0&st=yojvh12v&dl=0">
+        <h2>Ingredientes:</h2>
+        <li>250g de a&ccedil;&uacute;car</li>
+        <li>1 colher de liga neutra</li>
+        <li>1 litros de &aacute;gua</li>
+        <li>1 litro de frutas batidas no liquidificador</li>
+        <h2>Modo de preparo:</h2>
+        <li>Em uma panela adicione 1 colher de liga neutra e 250g de a&ccedil;&uacute;car e misture bem;</li>
+        <li>Ligue o fogo e v&aacute; adicionando a &aacute;gua aos poucos enquanto mistura;</li>
+        <li>Adicione toda a &aacute;gua,misture bem e deixe ferver;</li>
+        <li>Assim que ferver, desligue o fogo e deixe esfriar;</li>
+        <li>Escolha a fruta de sua prefer&ecirc;ncia e bata no liquidifcar até conseguir 1 litro de frutas batidas;</li>
+        <li>Misture as frutas batidas com a mistura da panela;</li>
+        <li>Utilize saquinhos de geladinho do tamanho preferido, amarre  e est&aacute; pronto!</li>
+        <br>
+        <p><p>Dica: H&aacute; um metodo para amrrar os saquinhos de geladinho, que depois de aprender fica muito mais f&aacute;cil. Pesquise &quot;como dar n&oacute; no geladinho de um jeito f&aacute;cil&quot; ou assita o v&iacute;deo a seguir:</p></p>
+        <iframe width="X" height="Y" src=https://www.youtube.com/watch?v=9ZEJtPrLfCk frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="dica">*Limpe o campo de pesquisa para aparecer todas as opções.</div>
+</div>
+</body>
+</html>
