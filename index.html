@@ -9,7 +9,7 @@
     body{
         background:#998265;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #fff;
+        background-color: #f9fee2;
 
 
 
@@ -29,6 +29,8 @@ width:90%;
     background-size: 100%;
     margin-top:50px;
     aspect-ratio: 3 / 1;
+  -webkit-filter: drop-shadow(0px 6px 2px #000);
+  filter: drop-shadow(0px 6px 2px #000);
     }
     .receitasveganas{
         font-size:150%;
@@ -58,8 +60,8 @@ width:90%;
         font-weight:bold;
         border-radius:50px;
         margin-bottom:30px;
-        border:0px solid #000;
-        box-shadow:0px 0px 1px 1px;
+        border:1px solid #122914;
+        box-shadow: 0px 4px 6px 1px #000;
 
     }
     input:focus {outline: none;
@@ -75,8 +77,7 @@ width:90%;
         margin:0 auto;
         left:0px;
         right:0px;
-        max-width:1200px;
-        border-radius:10px;
+        max-width:900px;
         background-color: #3B342C;
         background:transparent;
 
@@ -90,14 +91,13 @@ width:90%;
 
     }
     h1{
-        box-shadow:0px 0px 1px 1px;
         padding:20px;
-        background:#efc;
-        border-radius:10px;
+        border-top:1px solid #122914;
+        border-bottom:1px solid #122914;
     }
     a:link {
  text-decoration: none;
-  color:#00f;
+  color:#050;
 
   padding:3px;
   margin:10px;
@@ -107,19 +107,26 @@ width:90%;
 
 }
 a:visited {
- color:#00f;
+ color:#050;
   padding:3px;
   margin:10px;
   width:100%;
   margin:0 auto;
 font-weight:bold;
 }
+    .boxlink{
+        margin:10px;
+        padding:10px;
+        width:fit-content;
+        background:#f9f6ef;
+        box-shadow: 0px 4px 6px 1px #000;
+    }
     .foto{
 
     width:100%;
-    max-width:700px;
+    max-width:500px;
     pointer-events: none;
-    box-shadow:0px 0px 1px 1px;
+    box-shadow: 0px 4px 6px 1px #000;
 }
     .mini{
     display: block;
@@ -127,7 +134,7 @@ font-weight:bold;
     height:100px;
     margin:10px;
     pointer-events: none;
-    box-shadow: 0px 0px 1px 1px #000;
+    box-shadow: 0px 4px 6px 1px #000;
 }
 .atalho{
     font-size:20px;
@@ -154,9 +161,16 @@ font-weight:bold;
             }
         </script>
 <div class="conteudo">
-    <a class="atalho filtro" href="#um" translate="no">Bolo de cenoura com calda de chocolate<img class="mini" src="https://dl.dropbox.com/scl/fi/bpqepeerwp4re6uvvz0yv/bolo-de-cenoura-vegano.jpeg?rlkey=p1yathznz90zokq783uckbo93&st=7oznte45&dl=0"></a>
-    <a class="atalho filtro" href="#dois" translate="no">Pão caseiro<img class="mini" src="https://dl.dropbox.com/scl/fi/9x361hnd800krellcbc4u/IMG_20240127_212011_074.jpg?rlkey=72sj2kq5n6eykrxn7suf18o78&st=kiv7hf5e&dl=0"></a>
-    <a class="atalho filtro" href="#tres" translate="no">Geladinho<img class="mini" src="https://dl.dropbox.com/scl/fi/m0p1fya6eutosizxmtq7a/Geladinho-de-Maracuja.jpg?rlkey=oywx1hc68x4v5taen9fcbsaf0&st=yojvh12v&dl=0"></a>
+    
+    <div class="boxlink filtro">
+    <a class="atalho" href="#um" translate="no">Bolo de cenoura com calda de chocolate<img class="mini" src="https://dl.dropbox.com/scl/fi/bpqepeerwp4re6uvvz0yv/bolo-de-cenoura-vegano.jpeg?rlkey=p1yathznz90zokq783uckbo93&st=7oznte45&dl=0"></a>
+    </div>
+    <div class="boxlink filtro">
+    <a class="atalho" href="#dois" translate="no">Pão caseiro<img class="mini" src="https://dl.dropbox.com/scl/fi/9x361hnd800krellcbc4u/IMG_20240127_212011_074.jpg?rlkey=72sj2kq5n6eykrxn7suf18o78&st=kiv7hf5e&dl=0"></a>
+    </div>
+    <div class="boxlink filtro">
+    <a class="atalho" href="#tres" translate="no">Geladinho<img class="mini" src="https://dl.dropbox.com/scl/fi/m0p1fya6eutosizxmtq7a/Geladinho-de-Maracuja.jpg?rlkey=oywx1hc68x4v5taen9fcbsaf0&st=yojvh12v&dl=0"></a>
+    </div>
     
     <div class="conteudo-receita filtro" id="um">
         <h1>Bolo de cenoura com calda de chocolate</h1>
